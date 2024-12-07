@@ -21,9 +21,10 @@
 
     <header class="page-header">
         <div class="container header-container">
-     
+            
        <nav class="header-nav">
         <a class="logo header-logo" href="./index.html"> Web<span class="header-logo-black">Studio</span></a>
+       
 <ul class="nav-list">
     <li class="nav-item">
         <a class="nav-link active" href="./index.html">Studio</a>
@@ -36,6 +37,9 @@
     </li>
 </ul>
        </nav>
+       
+
+
     <address class="contacts" id="#contacts">
         <ul class="contacts-list">
             <li class="contacts-item">
@@ -46,9 +50,13 @@
             </li>
            
         </ul>
-
       </address>
-             
+
+      <button class="mobile-menu-btn" type="button">
+        <svg class="menu-icon" width="24" height="24">
+         <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+    </button>
     </div>
     </header>
 <main>
@@ -59,7 +67,7 @@
         </div>
         </section>
 
-<section class="description">
+<section class="description hide">
     <div class="container descr-container">
     <h2 class="hidden" hidden>hidden content</h2>
     <ul class="descr-item">
@@ -103,7 +111,7 @@
 </div>
 </section>
 
-<section class="our-team">
+<section class="our-team hide">
 <div class="container">
 <h2 id="#portfolio" class="team-title">Our Team</h2>
 
@@ -273,7 +281,7 @@
 </div>
 </section>
 
-<section class="our-portfolio">
+<section class="our-portfolio hide">
     <div class="container ">
     <h2 class="portfolio-title">Our Portfolio</h2>
     <ul class="portfolio-item">
@@ -367,7 +375,7 @@
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer hide">
     <div class="container footer-container">
         
             <div class="footer-text-cont">
@@ -431,7 +439,7 @@
      </div>
 </footer>
 
-<div class="backdrop is-open">
+<div class="backdrop ">
     <div class="modal">
         <button class="close-button" type="button">
             <svg class="close-icon" width="8" height="8">
@@ -508,11 +516,72 @@
             </form>
          </div>
 
-        
-
+    
     </div>
 
+<div class="mobile-menu">
+    <button class="menu-btn-close" type="button">
+        <svg class="icone-menu-close" width="8" height="8">
+         <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+    </button>
 
+    <ul class="mobile-menu-nav">
+        <li class="mobile-menu-list"> 
+            <a class="mobile-menu-link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-list"> 
+            <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-list"> 
+            <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+    </ul>
+
+    <address class="mobile-menu-contacts" id="#contacts">
+        <ul class="mobile-contacts-list">
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>  
+            </li>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a> 
+            </li>
+           
+        </ul>
+      </address>
+
+      <ul class="mobile-menu-list-socials">
+        <li class="team-item-socials">
+                <a class="team-link" href="https://www.instagram.com/">
+                <svg class="main-socials" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                   </svg>
+                </a>
+            
+        </li>
+        <li class="team-item-socials">
+            <a class="team-link" href="https://www.facebook.com/">
+                <svg class="main-socials" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                   </svg>
+            </a>
+        </li>
+        <li class="team-item-socials"> 
+            <a class="team-link" href="https://www.twitter.com/">
+            <svg class="main-socials" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+               </svg>
+            </a>
+        </li>
+        <li class="team-item-socials">
+            <a class="team-link" href="https://www.linkedin.com/">
+                <svg class="main-socials" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                   </svg>
+            </a>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>
